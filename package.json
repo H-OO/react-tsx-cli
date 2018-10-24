@@ -1,0 +1,30 @@
+{
+  "name": "react-tsx-cli",
+  "version": "0.0.1",
+  "description": "cli",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H-OO/react-tsx-cli.git"
+  },
+  "author": "H-OO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/H-OO/react-tsx-cli/issues"
+  },
+  "homepage": "https://github.com/H-OO/react-tsx-cli#readme",
+  "bin": {
+    "create-react-tsx": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.18.0",
+    "download-git-repo": "^1.1.0",
+    "handlebars": "^4.0.12",
+    "inquirer": "^6.2.0",
+    "log-symbols": "^2.2.0",
+    "ora": "^3.0.0",
+    "react-tsx-scripts": "^0.0.1"
+  }
+}
