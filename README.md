@@ -4,4 +4,6 @@
 
 因为设置了 `npm bin` 可直接在终端使用 `create-react-tsx` 命令
 
-脚手架获取使用者输入的信息，去仓库下载对应的模板
+脚手架获取使用者输入的信息，cli会前往仓库下载模板，渲染后返回
+
+eg: `create-react-tsx init projectName`

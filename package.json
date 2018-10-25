@@ -1,6 +1,6 @@
 {
   "name": "react-tsx-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "cli",
   "main": "index.js",
   "scripts": {},
@@ -24,7 +24,6 @@
     "handlebars": "^4.0.12",
     "inquirer": "^6.2.0",
     "log-symbols": "^2.2.0",
-    "ora": "^3.0.0",
-    "@hjyuan/react-tsx-scripts": "^0.0.1"
+    "ora": "^3.0.0"
   }
 }

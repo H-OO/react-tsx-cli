@@ -22,7 +22,7 @@ const symbols = require('log-symbols');
 console.log('-> tsx-cli');
 
 program
-  .version('0.0.1', '-v, --version')
+  .version('0.0.2', '-v, --version')
   .command('init <name>')
   .action(name => {
     inquirer
@@ -49,7 +49,7 @@ program
           } else {
             // console.log('download success..');
             spinner.succeed(); // 成功动画效果
-            const fileName = './template/package.json'; // 模板文件路径
+            const fileName = './package.json'; // 模板文件路径
             // 用于模板引擎渲染的数据
             const meta = {
               name,
