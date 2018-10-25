@@ -18,9 +18,6 @@ const ora = require('ora');
 const chalk = require('chalk');
 const symbols = require('log-symbols');
 
-
-console.log('-> tsx-cli');
-
 program
   .version('0.0.2', '-v, --version')
   .command('init <name>')
@@ -29,15 +26,15 @@ program
       .prompt([
         {
           name: 'description',
-          message: '请输入项目描述'
+          message: 'Input description:'
         },
         {
           name: 'author',
-          message: '请输入作者名称'
+          message: 'Input author:'
         }
       ])
       .then(answers => {
-        const spinner = ora('正在下载模板...'); // 下载动画实例
+        const spinner = ora('download...'); // 下载动画实例
         spinner.start(); // 开始动画
         const gitUrl = 'github:H-OO/react-tsx-template'; // github:H-OO
         // 把目标项目下载到当前目录下的下 './'
@@ -62,7 +59,11 @@ program
               const content = fs.readFileSync(fileName).toString();
               const result = handlebars.compile(content)(meta); // 将数据渲染到模板上
               fs.writeFileSync(fileName, result); // 以同步的方法创建文件
-              console.log(symbols.success, chalk.green('项目初始化完成'));
+              console.log(symbols.success, chalk.green('Init successfully.'));
+              console.log(
+                'How do use?\n',
+                chalk.blue('npm i \n npm run start')
+              );
             }
           }
         })
