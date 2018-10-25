@@ -1,6 +1,6 @@
 {
   "name": "react-tsx-cli",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "cli",
   "main": "index.js",
   "repository": {
@@ -8,6 +8,9 @@
     "url": "git+https://github.com/H-OO/react-tsx-cli.git"
   },
   "author": "H-OO",
+  "keywords": [
+    "react-tsx-cli"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/H-OO/react-tsx-cli/issues"
