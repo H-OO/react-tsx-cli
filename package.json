@@ -1,9 +1,8 @@
 {
   "name": "react-tsx-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "cli",
   "main": "index.js",
-  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/H-OO/react-tsx-cli.git"
