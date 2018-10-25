@@ -22,7 +22,7 @@ const symbols = require('log-symbols');
 console.log('-> tsx-cli');
 
 program
-  .version('1.0.2', '-v, --version')
+  .version('0.0.1', '-v, --version')
   .command('init <name>')
   .action(name => {
     inquirer
@@ -39,15 +39,15 @@ program
       .then(answers => {
         const spinner = ora('正在下载模板...'); // 下载动画实例
         spinner.start(); // 开始动画
-        const gitUrl = 'github:H-OO/react-tsx'; // github:H-OO
+        const gitUrl = 'github:H-OO/react-tsx-template'; // github:H-OO
         // 把目标项目下载到当前目录下的下 './'
         download(gitUrl, './', false, err => {
           if (err) {
-            console.log('download err..');
+            // console.log('download err..');
             spinner.fail(); // 失败动画效果
             console.log(symbols.error, chalk.red(err)); // × 错误信息样式为红色
           } else {
-            console.log('download success..');
+            // console.log('download success..');
             spinner.succeed(); // 成功动画效果
             const fileName = './template/package.json'; // 模板文件路径
             // 用于模板引擎渲染的数据
